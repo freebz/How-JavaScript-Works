@@ -1,12 +1,5 @@
 // 큰 정수
 
-["+", 8650752, 7098594, 31974]
-
-9000000000000000000
-= 8650752 + 7098594 * 16777216 ** 1 + 31974 * 16777216 ** 2
-= 8650752 + ((7098594 + (31974 * 16777216)) * 16777216)
-
-
 const radix = 16777216;
 const radix_squared = radix * radix;
 const log2_radix = 24;
@@ -776,6 +769,3 @@ export default Object.freeze({
   xor,
   zero
 });
-
-
-import big_integer from "./big_integer.js";
