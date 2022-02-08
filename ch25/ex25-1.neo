@@ -1,0 +1,64 @@
+# Neo
+
+0.1 + 0.2 = 0.3  # 마침내 true가 되는군요.
+
+
+def my little array: array(10)
+let my little array[10]: 666   # FAIL
+let my little array[]: 555
+
+my little array[0]             # null
+my little array[10]            # 555
+length(my little array)        # 11
+
+
+call (
+    my hero = "monster"
+    ? blood curdling scream
+    ! (
+        my hero = "butterfly" \/ my hero = "unicorn"
+	? do not make a sound
+	! sing like a rainbow
+    )
+)()
+
+
+"Hello" ~ "World"    # "HelloWorld"
+"Hello" ≈ "World"    # "Hello World"
+"Hello" ≈ ""         # "Hello"
+"Hello" ≈ null       # null
+
+
+def continuize: f any (
+    f callback, arguments... (callback(any(arguments...)))
+)
+
+
+my little function.method(x, y)
+
+
+my little function("method", [x, y])
+
+
+def pi: 3.14159265358979323846264338327950288419716939937510582097494459
+var counter: 0
+let counter: counter + 1
+
+
+call my little inpure side effect causer()
+
+
+if my here = "monster"
+    call blood curdling scream()
+else if my here = "butterfly" / my hero = "unicorn"
+    call do not make a sound()
+else
+    call sing like a rainbow()
+
+
+def my little function: f x the unknown {
+    return risky operation(x the unknown)
+failure
+    call launch all missiles()
+    return null
+}
