@@ -1,0 +1,7 @@
+import do: "example/do.neo"
+
+var result: do(𝑓+, [1, 2, 3], [5, 4, 3])
+# result is [6, 6, 6]
+
+let result: do(𝑓/, 60, [1, 2, 3, 4, 5, 6])
+# result is [60, 30, 20, 15, 12, 10]

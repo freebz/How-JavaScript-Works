@@ -1,0 +1,32 @@
+# 예제
+
+export 𝑓 function, arguments... {
+    if length(arguments) = 0
+        return null
+    var index: 0
+    def result: []
+    var stoop: false
+
+    def prepare arguments: 𝑓 argument {
+    	def candidate: (
+            array?(argument)
+	    ? argument[index]
+	    : (
+	        function?(argument)
+	    	? argument(index)
+	    	: argument
+	    )
+    	)
+    	if cadidate = null
+            let stop: true
+    	return candidate
+    }
+
+    loop
+        var processed: array(arguments, prepare arguments)
+  	if stop
+  	    break
+  	let result[]: function(processed...)
+  	let index: index + 1
+    return result
+}
